@@ -1,0 +1,113 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Metric_Converter
+{
+    class Program
+    {
+        static void Main()
+        {
+            double number = double.Parse(Console.ReadLine());
+            string fromUnit = Console.ReadLine();
+            string toUnit = Console.ReadLine();
+
+            string m = "m";
+            string mm = "mm";
+            string cm = "cm";
+            string mi = "mi";
+            string inch = "in";
+            string km = "km";
+            string ft = "ft";
+            string yd = "yd";
+
+            double millimeters = 1000;
+            double centimeters = 100;
+            double miles = 0.000621371192;
+            double inches = 39.3700787;
+            double kilometers = 0.001;
+            double feet = 3.2808399;
+            double yards = 1.0936133;
+
+            double numberInMeters = 0.0;
+
+            if (fromUnit == m)
+            {
+                numberInMeters = number;
+            }
+            else if (fromUnit == mm)
+            {
+                numberInMeters = number / millimeters;
+            }
+            else if (fromUnit == cm)
+            {
+                numberInMeters = number / centimeters;
+            }
+            else if (fromUnit == mi)
+            {
+                numberInMeters = number / miles;
+
+            }
+            else if (fromUnit == inch)
+            {
+                numberInMeters = number / inches;
+
+            }
+            else if (fromUnit == km)
+            {
+                numberInMeters = number / kilometers;
+
+            }
+            else if (fromUnit == ft)
+            {
+                numberInMeters = number / feet;
+
+            }
+            else if (fromUnit == yd)
+            {
+                numberInMeters = number / yards;
+            }
+
+
+
+
+            if (toUnit == mm)
+            {
+                numberInMeters *= millimeters;
+            }
+            else if (toUnit == cm)
+            {
+                numberInMeters *= centimeters;
+            }
+            else if (  toUnit == mi)
+            {
+                numberInMeters *= miles;
+
+            }
+            else if (toUnit == inch)
+            {
+                numberInMeters *= inches;
+
+            }
+            else if (toUnit == km)
+            {
+                numberInMeters *= kilometers;
+
+            }
+            else if (toUnit == ft)
+            {
+                numberInMeters *= feet;
+
+            }
+            else if (toUnit == yd)
+            {
+                numberInMeters *= yards;
+
+            }
+            double result = Math.Round(numberInMeters, 8);
+            Console.WriteLine(result);
+        }
+    }
+}

@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Proben_1
+{
+    class Program
+    {
+        static void Main()
+        {
+            var n = double.Parse(Console.ReadLine());
+
+            if (n%2==0)
+            {
+                Console.WriteLine("even");
+            }
+            else
+            {
+                Console.WriteLine("odd");
+            }
+        }
+    }
+}

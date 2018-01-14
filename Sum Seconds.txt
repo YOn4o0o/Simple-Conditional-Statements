@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Proben_1
+{
+    class Program
+    {
+        static void Main()
+        {
+            var num = int.Parse(Console.ReadLine());
+            var num2 = int.Parse(Console.ReadLine());
+            var num3 = int.Parse(Console.ReadLine());
+
+            var sum = num + num2 + num3;
+            var minutes = sum / 60;
+            var sec = sum % 60;
+
+            if (sec < 10)
+            {
+                Console.WriteLine(minutes + ":0" + sec);
+            }
+            else
+            {
+                Console.WriteLine(minutes +":" + sec);
+            }
+        }
+    }
+}

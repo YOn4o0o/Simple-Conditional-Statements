@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Proben_1
+{
+    class Program
+    {
+        static void Main()
+        {
+            var n = int.Parse(Console.ReadLine());
+            var n2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter two integer: ");
+            if (n > n2)
+            {
+                Console.WriteLine($"Greater number: {n}");
+            }
+            else
+            {
+                Console.WriteLine($"Greater number: {n2}");
+            }
+        }
+    }
+}

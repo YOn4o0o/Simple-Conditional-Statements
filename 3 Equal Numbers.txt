@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Proben_1
+{
+    class Program
+    {
+        static void Main()
+        {
+            var h = int.Parse(Console.ReadLine());
+            var m = int.Parse(Console.ReadLine());
+            var v = int.Parse(Console.ReadLine());
+
+            if (h == m && h == v && v == m)
+            {
+                Console.WriteLine("yes");
+            }
+            else
+            {
+                Console.WriteLine("no");
+            }
+
+        }
+        
+    }
+}
